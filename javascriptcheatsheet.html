@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lance's Cheatsheet</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV BAR MAKES IT EASY TO ACCESS OTHER PAGES -->
+    <nav class="zone red-pink sticky">
+      <ul class="main-nav"> 
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="htmlcheatsheet.html"> HTML Cheat Sheet</a> </li>
+        <li> <a href="csscheatsheet.html">CSS Cheat Sheet  </a> </li>    
+        <li> <a href="javascriptcheatsheet.html">Javascript Cheat Sheet</a></li>
+        <li> <a href="hobbypage.html">Hobby</a></li>
+        <li> <a href="resumepage.html">Resume</a></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT ME PART -->
+    <div class="container zone">
+      <div class="content">
+          <h1>JAVASCRIPT CHEAT SHEET</h1>
+          <p>
+            Javascript is the hardest and most important part of the website. This ensures that the website is responsive. 
+            These are where the actions are done through the use of functions. Examples of these actions are those events 
+            that occur due to clicking, hovering, and other ways to interact with a website. These directly interact with the DOM of a website
+            There are plenty of javascript tags that need to be learned in order to make 100% use of this.
+            SYNTAX for this language is hard to learn and takes a lot of time to get used to.
+            The code for javascript must be as effective as possible, meaning that it shouldnt be repetitive.
+          </p>
+          <h1>JAVASCRIPT SYNTAX</h1>
+          <div class="table-container">
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th>Syntax</th>
+                  <th>Use</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td contenteditable="false">let</td>
+                  <td contenteditable="false">Declaring Variables</td>
+                  <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                  <td contenteditable="false">console.log</td>
+                  <td contenteditable="false">Console Output</td>
+                  <td><button class="delete-btn">Delete</button></td>
+                </tr>
+                <tr>
+                  <td contenteditable="false">if-else conditional statement</td>
+                  <td contenteditable="false">let num = 10;
+                    if (num > 0) {
+                        console.log("Positive");
+                    } else {
+                        console.log("Non-positive");
+                    }</td>
+                  <td><button class="delete-btn">Delete</button></td>
+                  <tr>
+                    <td contenteditable="false">Ternary Operator (Conditional Expression):</td>
+                    <td contenteditable="false">let result = (num > 0) ? "Positive" : "Non-positive";
+                      console.log(result);</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Function Declaration</td>
+                    <td contenteditable="false">function greet(name) {
+                      console.log("Hello, " + name + "!");
+                  }</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Function Call</td>
+                    <td contenteditable="false">greet("Alice");</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Array Declaration</td>
+                    <td contenteditable="false">let numbers = [1, 2, 3, 4, 5]</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Array Access</td>
+                    <td contenteditable="false">console.log(numbers[0]); // Outputs: 1</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Array Length</td>
+                    <td contenteditable="false">console.log(numbers.length); // Outputs: 5</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Loop (for)</td>
+                    <td contenteditable="false">for (let i = 0; i < numbers.length; i++) {
+                      console.log(numbers[i]);
+                  }</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Loop (while)</td>
+                    <td contenteditable="false">let i = 0;
+                      while (i < numbers.length) {
+                          console.log(numbers[i]);
+                          i++;
+                      }</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Loop (for...of)</td>
+                    <td contenteditable="false">for (let number of numbers) {
+                      console.log(number);
+                  }</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Loop (forEach)</td>
+                    <td contenteditable="false">numbers.forEach(function(number) {
+                      console.log(number);
+                  });</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Array Push</td>
+                    <td contenteditable="false">numbers.push(6)</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">Array Pop</td>
+                    <td contenteditable="false">let lastNumber = numbers.pop()</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <td contenteditable="false">https://www.w3schools.com/js/</td>
+                    <td contenteditable="false">Great website to learn CSS</td>
+                    <td><button class="delete-btn">Delete</button></td>
+                  </tr>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="table-actions">
+              <button class="edit-btn">Edit</button>
+              <button class="add-btn">Add</button>
+              <button class="save-btn" disabled>Save</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+
+    <!-- ICONS FOR EACH PAGE AND LINKS TO THEM -->
+    <div class="zone red-pink grid-wrapper">
+      <a href="index.html">
+        <div class="box zone"><img src="img/home.png"></div>
+      </a>
+      <a href="htmlcheatsheet.html">
+        <div class="box zone"><img src="img/icons8-html-5-512.png"></div>
+      </a>
+      <a href="csscheatsheet.html">
+        <div class="box zone"><img src="img/icons8-css-512.png"></div>
+      </a>
+      <a href="hobbypage.html">
+        <div class="box zone"><img src="img/icons8-game-controller-64.png"></div>
+      </a>
+      <a href="resumepage.html">
+        <div class="box zone"><img src="img/icons8-business-documentation-64.png"></div>
+      </a>
+    </div>
+
+
+    <!-- CHANGE TO CONTACT DETAILS AND APPLY TO EVERY PAGE -->
+    <footer class="zone red">
+      <ul class="contact">
+        <li> Lance Silva</li>
+      </ul>
+    </footer>
+  </div>
+  <script type="text/Javascript" src="script.js">
+  </script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js">
+  </script>
+</body>
+</body>
+</html>
